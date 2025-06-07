@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black; /* Dark theme */
+    color: white;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.choices button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.choices button:hover {
+    transform: scale(1.1); /* Interactive effect */
+}
+
+/* Adding images for choices */
+button:nth-child(1) {
+    background-image: url('rock.png'); /* Add rock image */
+}
+
+button:nth-child(2) {
+    background-image: url('paper.png'); /* Add paper image */
+}
+
+button:nth-child(3) {
+    background-image: url('scissors.png'); /* Add scissors image */
+}
